@@ -22,4 +22,27 @@
     width: 20%;
     gap: 0.5rem;
     font-family: 'Times New Roman', Times, serif;
+    padding-left: 0.3%;
+    float: left;
+}
+
+.searchsection{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    float: left;
+    padding-left: 0.3%;
+    height: 40px;
+}
+
+input[type='text']{
+    font-size: larger;
+    height: 30px;
+    border-radius: 25px 0 0 25px;
+}
+button[type='submit']{
+    font-size: larger;
+    height: 36px;
+    width: 50px;
+    border-radius: 0 25px 25px 0;
 }
