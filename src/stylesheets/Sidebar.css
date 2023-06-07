@@ -1,0 +1,25 @@
+.sidebar{
+    width: 200px;
+    height: 800px;
+    background-color: aqua;
+    justify-content: center;
+    margin-left: 0.5%;
+    display: block;
+    align-items: center;
+}
+
+.sidebarinner{
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    width: 185px;
+    height: 40px;
+    background-color: white;
+    align-items: center;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.sidebarinner:hover{
+    background-color: whitesmoke;
+}
