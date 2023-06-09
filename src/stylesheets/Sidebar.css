@@ -23,3 +23,20 @@
 .sidebarinner:hover{
     background-color: whitesmoke;
 }
+
+.sidebarinner1{
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    width: 185px;
+    height: 40px;
+    background-color: white;
+    align-items: center;
+    padding-left: 15px;
+    margin: 0;
+    border-bottom: solid lightslategrey;
+}
+
+.sidebarinner1:hover{
+    background-color: whitesmoke;
+}
