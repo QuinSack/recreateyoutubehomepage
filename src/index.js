@@ -4,6 +4,7 @@ import App from './App';
 import './stylesheets/Navbar.css'
 import './App.css'
 import './stylesheets/Sidebar.css'
+import './stylesheets/ContentPage.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
