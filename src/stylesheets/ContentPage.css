@@ -1,0 +1,7 @@
+.contentcontainer{
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    background-color: aqua;
+}
