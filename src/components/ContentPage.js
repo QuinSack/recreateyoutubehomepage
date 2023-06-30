@@ -3,6 +3,8 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 
 const ContentPage = () => {
+
+  const [apiData, setApiData] = useState([]);
   const handleData = async() => {
     const options = {
       method: 'GET',
@@ -26,8 +28,9 @@ const ContentPage = () => {
 
     try {
       const response = await axios.request(options);
-      console.log(response.data);
-      //setApiData(response.data.Object);
+      
+      console.log(response.data.contents);
+      setApiData(response.data.contents);
     } catch (error) {
       console.error(error);
     }
@@ -37,12 +40,15 @@ const ContentPage = () => {
     handleData();
   },[])
 
-
-  const [apiData, setApiData] = useState([]);
   
   return (
     <div className='contentcontainer'>
-      <h3>Hi</h3>
+      {apiData.map((ap) =>  {
+        return(
+          <h3>{ap.video?.channelName}</h3>
+        )
+      } 
+      )}
     </div>
   )
 }
