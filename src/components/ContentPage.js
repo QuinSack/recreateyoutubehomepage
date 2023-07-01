@@ -49,7 +49,7 @@ const ContentPage = () => {
             <>
               <div className='contentbox'>
                 <div className='thumbnaildisplay'>
-                  <img src={ap.video.thumbnails[1]} className='thumbnail' />
+                  <img src={ap.video.thumbnails[0].url} className='thumbnail' />
                 </div>
                 <h3>{ap.video.channelName}</h3>
               </div>
