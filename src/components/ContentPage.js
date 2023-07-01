@@ -51,9 +51,12 @@ const ContentPage = () => {
                 <div className='thumbnaildisplay'>
                   <img src={ap.video.thumbnails[0].url} className='thumbnail' />
                 </div>
-                <h3>{ap.video.channelName}</h3>
+                <div className='titleauthordisplay'>
+                  <h3 className='videotitle'>{ap.video.title}</h3>
+                  <h5 className='channelname'>{ap.video.channelName}</h5>
+                  <h5 className='views'>{ap.video.viewCountText} . {ap.video.publishedTimeText}</h5>
+                </div>
               </div>
-                
             </>
           )
         } 
