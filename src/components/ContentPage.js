@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 
 import axios from 'axios';
+import '../stylesheets/ContentPage.css'
 
 const ContentPage = () => {
 
@@ -43,12 +44,20 @@ const ContentPage = () => {
   
   return (
     <div className='contentcontainer'>
-      {apiData.map((ap) =>  {
-        return(
-          <h3>{ap.video?.channelName}</h3>
-        )
-      } 
-      )}
+        {apiData.map((ap) =>  {
+          return(
+            <>
+              <div className='contentbox'>
+                <div className='thumbnaildisplay'>
+                  <img src={ap.video.thumbnails[1]} className='thumbnail' />
+                </div>
+                <h3>{ap.video.channelName}</h3>
+              </div>
+                
+            </>
+          )
+        } 
+        )}
     </div>
   )
 }
